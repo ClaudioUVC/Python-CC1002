@@ -1,4 +1,9 @@
-#ingresar lados
+#Al ejecutar el programa interactivo se pedira entregar las medidas
+#del triangulo deseado. El programa detectara si las medidas propor
+#cionadas son capaces de formar un triangulo, de modo contrario el
+#programa avisara del error. Si las medidas entregadas son capaces
+#de formar un triangulo, se imprimira en pantalla el tipo de trian-
+#gulo, si es rectangulo, el area y el perimetro de este.
 import triangulo
 import math
 a=input ('Ingrese el primer lado: ')
