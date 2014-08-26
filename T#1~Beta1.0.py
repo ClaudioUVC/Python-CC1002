@@ -23,3 +23,18 @@ def otrabase(numero,base):
         return (otrabase(nuevonumero,base)+resto2)*10
     elif nuevonumero==0 and resto>=0:
         return resto
+
+def correcto(numero,base):
+    nuevonumero=numero/10
+    resto=numero%10
+    if nuevonumero > 0:
+        if resto < base:
+            Respuesta= True*correcto(nuevonumero,base)
+            if Respuesta==1:
+                return True
+            else:
+                return False
+        else:
+            return False
+    else:
+        return True
