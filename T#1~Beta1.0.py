@@ -14,14 +14,12 @@ def cifrasnumero(a):
         return 1
     else:
         return 1 + cifrasnumero(a/10)
-
-def otraBase(numero,base):
-    cifras=cifrasNumeros(numero)
-    exponente=cifras-1
-    nuevoNumero=numero/(base**exponente)
-    num=numero%(base**exponente)
-    if nuevoNumero > 0
-        nnu=otraBase(nuevoNumero,base)
-        return (num*10**exponente)
-    
-    
+        
+def otrabase(numero,base):
+    nuevonumero=numero/base
+    resto=numero%base
+    if nuevonumero>0 and resto >=0:
+        resto2=resto/10.0
+        return (otrabase(nuevonumero,base)+resto2)*10
+    elif nuevonumero==0 and resto>=0:
+        return resto
