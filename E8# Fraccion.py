@@ -62,11 +62,11 @@ def simplificar(x):
 #prueba: fraccion fraccion -> fraccion
 #suma, resta, multiplica y divide fracciones
 def prueba(a,b):
-    suma=simplificar(sumaF(a,b))
-    resta=simplificar(restaF(a,b))
-    mul=simplificar(mulF(a,b))
-    div=simplificar(divF(a,b))
-    return "La suma es: "+str(suma.numerador)+"/"+str(suma.denominador)+\
-           " ~ La resta es: "+str(resta.numerador)+"/"+str(resta.denominador)+\
-           " ~ La multiplicacion es: "+str(mul.numerador)+"/"+str(mul.denominador)+\
-           " ~ La division es: "+str(div.numerador)+"/"+str(div.denominador)
+    suma=aString(simplificar(sumaF(a,b)))
+    resta=aString(simplificar(restaF(a,b)))
+    mul=aString(simplificar(mulF(a,b)))
+    div=aString(simplificar(divF(a,b)))
+    return "La suma es: "+suma+\
+           " ~ La resta es: "+resta+\
+           " ~ La multiplicacion es: "+mul+\
+           " ~ La division es: "+div
